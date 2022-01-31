@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Страны мира</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css.css" rel="stylesheet" media="all">
+	<!-- <link href="new-layout.css" rel="stylesheet" media="all"> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400" rel="stylesheet">
+</head>
+<body>
+
+	<div class="fixed-UI">
+		
+		<aside class="table-filter">
+
+			<input type="text" id="table_search" placeholder="Поиск страны/столицы">
+
+			<div class="table-filter__container">
+				<div class="table-filter__title">Фильтр</div>
+				<div id="table_filter__clean" class="hidden">очистить</div>
+
+				<div class="table-filter__inner-wrap">
+
+					<!-- Часть света -->
+					<div class="filter filter--continent filter--collapsed">
+						<div class="filter__label">Часть света</div>
+						
+						<div class="filter__options-container">
+							<div class="filter__option">
+								<input type="checkbox" id="c_all" checked>
+								<label for="c_all">все</label>
+							</div>
+							<div class="filter__option">
+								<input type="checkbox" id="australia">
+								<label for="australia">Австралия</label>
+							</div>
+							<div class="filter__option">
+								<input type="checkbox" id="africa" >
+								<label for="africa">Африка</label>
+							</div>
+							<div class="filter__option">
+								<input type="checkbox" id="asia">
+								<label for="asia">Азия</label>
+							</div>
+							<div class="filter__option">
+								<input type="checkbox" id="europa">
+								<label for="europa">Европа</label>
+							</div>
+							<div class="filter__option">
+								<input type="checkbox" id="north-america" >
+								<label for="north-america">Северная Америка</label>
+							</div>
+							<div class="filter__option">
+								<input type="checkbox" id="south-america" >
+								<label for="south-america">Южная Америка</label>
+							</div>
+						</div>
+					</div>
+						
+					<!-- Полушарие -->
+					<div class="filter filter--hemisphere filter--collapsed">
+						<div class="filter__label">Полушарие</div>
+						
+						<div class="filter__options-container">
+							<div class="filter__option">
+								<input id="hs_all" type="checkbox" checked>
+								<label for="hs_all">все</label>
+							</div>
+							<div class="filter__option">
+								<input id="lat_north" type="checkbox">
+								<label for="lat_north" title="Вся территория страны находится в Северном полушарии">Север</label>
+							</div>
+							<div class="filter__option">
+								<input id="lat_south" type="checkbox">
+								<label for="lat_south" title="Вся территория страны находится в Южном полушарии">Юг</label>
+							</div>
+							<div class="filter__option">
+								<input id="lat_north-south" type="checkbox">
+								<label for="lat_north-south" title="Страны, через которые проходит Экватор">Экватор</label>
+							</div>
+							<div class="filter__option">
+								<input id="long_west" type="checkbox">
+								<label for="long_west" title="Вся территория страны находится в Западном полушарии">Запад</label>
+							</div>
+							<div class="filter__option">
+								<input id="long_east" type="checkbox">
+								<label for="long_east" title="Вся территория страны находится в Восточном полушарии. + Россия (хотя около 0,5% страны (Чукотский п-ов) находится в Западном полушарии.">Восток</label>
+							</div>
+							<div class="filter__option">
+								<input id="long_west-east" type="checkbox">
+								<label for="long_west-east" title="Страны, через которые проходит нулевой меридиан (или 180&deg;)">0&deg; / 180&deg;</label>
+							</div>
+						</div>
+					</div>
+						
+					<!-- Население -->
+					<div class="filter filter--naselenie filter--collapsed">
+						<div class="filter__label">Население</div>	
+						
+						<section class="filter--by-value">
+							<div class="input-wrap"><input id="nas_Min" type="text" maxlength="11"></div>
+							<div class="input-wrap"><input id="nas_Max" type="text" maxlength="13"></div>
+							<input type="range" id="nas_Min__slider" min="0" max="300000000" value="0" step="1">
+							<input type="range" id="nas_Max__slider" min="0" max="1500000000" value="1500000000" step="1">
+						</section>
+						
+						<div class="filter__options-container">
+							<div class="filter__option">
+								<input type="radio" name="nas-switcher" id="n_all" checked>
+								<label for="n_all">все</label>
+							</div>
+							<div class="filter__option">
+								<input type="radio" name="nas-switcher" id="n_1">
+								<label for="n_1">&lt; 100 тыс</label>
+							</div>
+							<div class="filter__option">
+								<input type="radio" name="nas-switcher" id="n_2">
+								<label for="n_2">0,1&ndash;1 млн</label>
+							</div>
+							<div class="filter__option">
+								<input type="radio" name="nas-switcher" id="n_3">
+								<label for="n_3">1&ndash;5 млн</label>
+							</div>
+							<div class="filter__option">
+								<input type="radio" name="nas-switcher" id="n_4">
+								<label for="n_4">5&ndash;10 млн</label>
+							</div>
+							<div class="filter__option">
+								<input type="radio" name="nas-switcher" id="n_5">
+								<label for="n_5">10&ndash;25 млн</label>
+							</div>
+							<div class="filter__option">
+								<input type="radio" name="nas-switcher" id="n_6">
+								<label for="n_6">25&ndash;50 млн</label>
+							</div>
+							<div class="filter__option">
+								<input type="radio" name="nas-switcher" id="n_7">
+								<label for="n_7">50&ndash;100 млн</label>
+							</div>
+							<div class="filter__option">
+								<input type="radio" name="nas-switcher" id="n_8">
+								<label for="n_8">&gt; 100 млн</label>
+							</div>
+						</div>
+					</div>
+						
+					<!-- Площадь -->
+					<div class="filter filter--terra filter--collapsed">
+						<div class="filter__label">Площадь (км²)</div>
+						
+						<section class="filter--by-value">
+							<div class="input-wrap"><input id="terra_Min" type="text"></div>
+							<div class="input-wrap"><input id="terra_Max" type="text"></div>
+							<input type="range" id="terra_Min__slider" min="0" max="5000000" value="0" step="1">
+							<input type="range" id="terra_Max__slider" min="0" max="18000000" value="18000000" step="1">
+						</section>
+						
+						<div class="filter__options-container">
+							<div class="filter__option">
+								<input type="radio" name="terra-switcher" id="t_all" checked>
+								<label for="t_all">все</label>
+							</div>
+							<div class="filter__option">
+								<input type="radio" name="terra-switcher" id="t_1">
+								<label for="t_1" title="Люксембург и меньше">карлики</label>
+							</div>
+							<div class="filter__option">
+								<input type="radio" name="terra-switcher" id="t_2">
+								<label for="t_2">крошечные</label>
+							</div>
+							<div class="filter__option">
+								<input type="radio" name="terra-switcher" id="t_3">
+								<label for="t_3">очень маленькие</label>
+							</div>
+							<div class="filter__option">
+								<input type="radio" name="terra-switcher" id="t_4">
+								<label for="t_4">маленькие</label>
+							</div>
+							<div class="filter__option">
+								<input type="radio" name="terra-switcher" id="t_5">
+								<label for="t_5">средние</label>
+							</div>
+							<div class="filter__option">
+								<input type="radio" name="terra-switcher" id="t_6">
+								<label for="t_6">большие</label>
+							</div>
+							<div class="filter__option">
+								<input type="radio" name="terra-switcher" id="t_7">
+								<label for="t_7">очень большие</label>
+							</div>
+							<div class="filter__option">
+								<input type="radio" name="terra-switcher" id="t_8">
+								<label for="t_8">огромные</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Опции -->
+			<div class="table-filter__settings shown">
+				<div class="table-filter__inner-wrap">
+					<div class="filter__options-container">
+						<div class="filter__label">Отображать:</div>
+
+						<div class="filter__option">
+							<input type="checkbox" id="nas_mln">
+							<label for="nas_mln">Население в миллионах</label>
+						</div>
+						<div class="filter__option">
+							<input type="checkbox" id="terra_kilo">
+							<label for="terra_kilo">Площадь в тыс. км²</label>
+						</div>
+						<div class="filter__option">
+							<input type="checkbox" id="population_density">
+							<label for="population_density">Плотность населения</label>
+						</div>
+						<div class="filter__option">
+							<input type="checkbox" id="dependent_countries">
+							<label for="dependent_countries">Зависимые территории</label>
+						</div>
+						<div class="filter__option">
+							<input type="checkbox" id="unrecognized_countries">
+							<label for="unrecognized_countries">Непризнанные государства</label>
+						</div>
+					</div>
+				</div>
+
+				<button class="close" id="settings_visibility">✖</button>
+			</div>
+
+			<!-- Опции -->
+			<div class="table-filter__settings shown world-map-link">
+				<a href="map.html" target="_blank">Карта Мира</a>
+			</div>
+
+		</aside>
+	</div>
+	
+	<main>
+		<div class="title-block">
+			<h1>Страны мира</h1>
+			<div class="TR-quantity">&nbsp;&nbsp;&nbsp;</div>
+		</div>
+
+		<TRnums><nmbrs></nmbrs></TRnums>
+
+		<table>
+			<caption></caption>
+			<thead>
+				<tr>
+					<th id="strana" class="sorted"><p>страна</p></th>
+					<th id="stolica"><p>столица</p></th>
+					<th id="continent"><p>часть света</p></th>
+					<th id="naselenie"><p>население</p></th>
+					<th id="terra"><p title="км²">площадь</p></th>
+					<th id="density"><p title="чел/км²">плотность населения</p></th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+			<!-- <tfoot>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tfoot> -->
+		</table>
+	</main>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<script src="countries.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.container {
+	display: inline-block;
+	width: auto;
+	top: auto;
+	bottom: auto;
+}
+main {
+	overflow: unset;
+}
+table {
+	margin: auto;
+}

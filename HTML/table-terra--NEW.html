@@ -1,0 +1,1813 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Таблица Стран</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="css.css" rel="stylesheet" media="all">
+</head>
+<body>
+<table-flex>
+	<table-filter>
+		<div class="filter">
+			<div class="label">Часть света</div>
+			<div class="options-container">
+				<div id="continents-all">все</div>
+				<options>
+					<div id="africa">Африка</div>
+					<div id="america">Америка</div>
+					<div id="asia">Азия</div>
+					<div id="europa">Европа</div>
+					<div id="oceania">Океания</div>
+				</options>
+			</div>
+		</div>
+
+		<div class="filter">
+			<div class="label">Население</div>
+			<div class="options-container">
+				<div id="naselenie-all">все</div>
+				<options>
+					<div id="n0">< 100 тыс.</div>
+					<div id="n1">0,1&ndash;1 млн.</div>
+					<div id="n2">1&ndash;5 млн.</div>
+					<div id="n3">5&ndash;10 млн.</div>
+					<div id="n4">10&ndash;25 млн.</div>
+					<div id="n5">25&ndash;50 млн.</div>
+					<div id="n6">50&ndash;100 млн.</div>
+					<div id="n7">> 100 млн.</div>
+				</options>
+			</div>
+		</div>
+
+		<div class="filter">
+			<div class="label">Размер</div>
+			<div class="options-container">
+				<div id="terra-all">все</div>
+				<options>
+					<div id="dwarf">Карлики</div>
+					<div id="tiny">Крошечные</div>
+					<div id="very-small">Очень маленькие</div>
+					<div id="small">Маленькие</div>
+					<div id="medium">Средние</div>
+					<div id="big">Большие</div>
+					<div id="very-big">Очень большие</div>
+					<div id="huge">Огромные</div>
+				</options>
+			</div>
+		</div>
+	</table-filter>
+
+	<table-head>
+		<c id="strana" title="Страна или территория"><span>Страна</span></c>
+		<c id="stolica"><span>Столица</span></c>
+		<c id="continent"><span>Часть света</span></c>
+		<c id="naselenie"><span>Население</span></c>
+		<c id="terra" title="км²"><span>Площадь</span></c>
+	</table-head>
+
+	<table-data>
+		<row s class="AUS  oceania n5  huge">
+			<c>Австралия</c>
+			<c>Канберра</c>
+			<c>Океания</c>
+			<c>25 728 080</c>
+			<c>7 686 850</c>
+		</row>
+		<row class="AUT  europa n3  very-small">
+			<c>Австрия</c>
+			<c>Вена</c>
+			<c>Европа</c>
+			<c>8 902 600</c>
+			<c>83 871</c>
+		</row>
+		<row s class="AZE  asia n4  very-small">
+			<c>Азербайджан</c>
+			<c>Баку</c>
+			<c>Азия</c>
+			<c>10 067 108</c>
+			<c>75 100</c>
+		</row>
+		<row s class="ALA  europa  n0  dwarf">
+			<c>Аландские острова</c>
+			<c>Мариехамн</c>
+			<c>Европа</c>
+			<c>29 931</c>
+			<c>1 553</c>
+		</row>
+		<row s class="ALB  europa n2  tiny">
+			<c>Албания</c>
+			<c>Тирана</c>
+			<c>Европа</c>
+			<c>2 845 955</c>
+			<c>28 748</c>
+		</row>
+		<row s class="ALG  africa n5  very-big">
+			<c>Алжир</c>
+			<c>Алжир</c>
+			<c>Африка</c>
+			<c>43 000 000</c>
+			<c>2 381 740</c>
+		</row>
+		<row class="ASA  oceania  n0  dwarf">
+			<c>Американское Самоа</c>
+			<c>Паго-Паго</c>
+			<c>Океания</c>
+			<c>56 700</c>
+			<c>199</c>
+		</row>
+		<row s class="AIA  america  n0  dwarf">
+			<c>Ангилья</c>
+			<c>Валли</c>
+			<c>Америка</c>
+			<c>14 869</c>
+			<c>100</c>
+		</row>
+		<row class="ANG  africa n5  big">
+			<c>Ангола</c>
+			<c>Луанда</c>
+			<c>Африка</c>
+			<c>31 127 674</c>
+			<c>1 246 700</c>
+		</row>
+		<row class="AND  europa  n0  dwarf">
+			<c>Андорра</c>
+			<c>Андорра-ла-Велья</c>
+			<c>Европа</c>
+			<c>77 543</c>
+			<c>468</c>
+		</row>
+		<row class="ATA  n0  huge">
+			<c>Антарктида</c>
+			<c>&mdash;</c>
+			<c>Антарктида</c>
+			<c>&mdash;</c>
+			<c>14 107 000</c>
+		</row>
+		<row class="ATG  america  n0  dwarf">
+			<c>Антигуа и Барбуда</c>
+			<c>Сент-Джонс</c>
+			<c>Америка</c>
+			<c>96 453</c>
+			<c>442</c>
+		</row>
+		<row class="ARG  america n5  very-big">
+			<c>Аргентина</c>
+			<c>Буэнос-Айрес</c>
+			<c>Америка</c>
+			<c>44 938 712</c>
+			<c>2 766 890</c>
+		</row>
+		<row class="ARM  asia n2  tiny">
+			<c>Армения</c>
+			<c>Ереван</c>
+			<c>Азия</c>
+			<c>2 956 900</c>
+			<c>29 743</c>
+		</row>
+		<row class="ARU  america n1  dwarf">
+			<c>Аруба</c>
+			<c>Ораньестад</c>
+			<c>Америка</c>
+			<c>112 190</c>
+			<c>193</c>
+		</row>
+		<row class="AFG  asia n5  medium">
+			<c>Афганистан</c>
+			<c>Кабул</c>
+			<c>Азия</c>
+			<c>32 225 560</c>
+			<c>647 500</c>
+		</row>
+		<row class="BAH  america n1  tiny">
+			<c>Багамы</c>
+			<c>Нассау</c>
+			<c>Америка</c>
+			<c>385 340</c>
+			<c>13 940</c>
+		</row>
+		<row class="BAN  asia n7  small">
+			<c>Бангладеш</c>
+			<c>Дакка</c>
+			<c>Азия</c>
+			<c>168 715 106</c>
+			<c>144 000</c>
+		</row>
+		<row class="BRB  america n1  dwarf">
+			<c>Барбадос</c>
+			<c>Бриджтаун</c>
+			<c>Америка</c>
+			<c>287 025</c>
+			<c>430</c>
+		</row>
+		<row class="BHR  asia n2  dwarf">
+			<c>Бахрейн</c>
+			<c>Манама</c>
+			<c>Азия</c>
+			<c>1 543 300</c>
+			<c>665</c>
+		</row>
+		<row class="BLZ  america n1  tiny">
+			<c>Белиз</c>
+			<c>Бельмопан</c>
+			<c>Америка</c>
+			<c>408 487</c>
+			<c>22 966</c>
+		</row>
+		<row class="BLR  europa n3  small">
+			<c>Белоруссия</c>
+			<c>Минск</c>
+			<c>Европа</c>
+			<c>9 397 800</c>
+			<c>207 600</c>
+		</row>
+		<row class="BEL  europa n4  very-small">
+			<c>Бельгия</c>
+			<c>Брюссель</c>
+			<c>Европа</c>
+			<c>11 534 131</c>
+			<c>32 545</c>
+		</row>
+		<row class="BEN  africa n4  very-small">
+			<c>Бенин</c>
+			<c>Порто-Ново</c>
+			<c>Африка</c>
+			<c>11 733 059</c>
+			<c>112 620</c>
+		</row>
+		<row class="BER  america  n0  dwarf">
+			<c>Бермуды</c>
+			<c>Гамильтон</c>
+			<c>Америка</c>
+			<c>64 027</c>
+			<c>54</c>
+		</row>
+		<row class="BUL  europa n3  very-small">
+			<c>Болгария</c>
+			<c>София</c>
+			<c>Европа</c>
+			<c>6 951 482</c>
+			<c>110 910</c>
+		</row>
+		<row class="BOL  america n4  big">
+			<c>Боливия</c>
+			<c>Сукре</c>
+			<c>Америка</c>
+			<c>11 469 896</c>
+			<c>1 098 580</c>
+		</row>
+		<row class="BES  america  n0  dwarf">
+			<c title="Бонэйр, Синт-Эстатиус и Саба">Бонэйр, Синт-Эстатиус и Саба</c>
+			<c>Кралендейк</c>
+			<c>Америка</c>
+			<c>25 000</c>
+			<c>322</c>
+		</row>
+		<row class="BIH  europa n2  very-small">
+			<c>Босния и Герцеговина</c>
+			<c>Сараево</c>
+			<c>Европа</c>
+			<c>3 301 000</c>
+			<c>51 129</c>
+		</row>
+		<row class="BOT  africa n2  medium">
+			<c>Ботсвана</c>
+			<c>Габороне</c>
+			<c>Африка</c>
+			<c>2 338 851</c>
+			<c>581 730</c>
+		</row>
+		<row class="BRA  america n7  huge">
+			<c>Бразилия</c>
+			<c>Бразилиа</c>
+			<c>Америка</c>
+			<c>211 605 906</c>
+			<c>8 511 965</c>
+		</row>
+		<row class="BRU  asia n1  tiny">
+			<c>Бруней</c>
+			<c title="Бандар-Сери-Бегаван">Бандар-Сери-Бегаван</c>
+			<c>Азия</c>
+			<c>459 500</c>
+			<c>5 770</c>
+		</row>
+		<row class="BFA  africa n4  small">
+			<c>Буркина-Фасо</c>
+			<c>Уагадугу</c>
+			<c>Африка</c>
+			<c>21 510 181</c>
+			<c>274 200</c>
+		</row>
+		<row class="BDI  africa n4  tiny">
+			<c>Бурунди</c>
+			<c>Бужумбура</c>
+			<c>Африка</c>
+			<c>10 953 317</c>
+			<c>27 830</c>
+		</row>
+		<row class="BHU  asia n1  very-small">
+			<c>Бутан</c>
+			<c>Тхимпху</c>
+			<c>Азия</c>
+			<c>741 672</c>
+			<c>47 000</c>
+		</row>
+		<row class="VAN  oceania n1  tiny">
+			<c>Вануату</c>
+			<c>Порт-Вила</c>
+			<c>Океания</c>
+			<c>304 500</c>
+			<c>12 200</c>
+		</row>
+		<row class="VAT  europa  n0  dwarf">
+			<c>Ватикан</c>
+			<c>Ватикан</c>
+			<c>Европа</c>
+			<c>825</c>
+			<c>0</c>
+		</row>
+		<row class="GBR  europa n6  small">
+			<c>Великобритания</c>
+			<c>Лондон</c>
+			<c>Европа</c>
+			<c>66 796 807</c>
+			<c>244 820</c>
+		</row>
+		<row class="HUN  europa n3  very-small">
+			<c>Венгрия</c>
+			<c>Будапешт</c>
+			<c>Европа</c>
+			<c>9 769 000</c>
+			<c>93 030</c>
+		</row>
+		<row class="VEN  america n5  big">
+			<c>Венесуэла</c>
+			<c>Каракас</c>
+			<c>Америка</c>
+			<c>32 219 521</c>
+			<c>912 050</c>
+		</row>
+		<row class="VGB  america  n0  dwarf">
+			<c title="Виргинские Острова (Великобритания)">Виргинские Острова (Великобритания)</c>
+			<c>Род-Таун</c>
+			<c>Америка</c>
+			<c>30 030</c>
+			<c>153</c>
+		</row>
+		<row class="VIR  america n1  dwarf">
+			<c title="Виргинские Острова (США)">Виргинские Острова (США)</c>
+			<c>Шарлотта-Амалия</c>
+			<c>Америка</c>
+			<c>104 578</c>
+			<c>352</c>
+		</row>
+		<row class="TLS  asia n2  tiny">
+			<c>Восточный Тимор</c>
+			<c>Дили</c>
+			<c>Азия</c>
+			<c>1 387 149</c>
+			<c>14 874</c>
+		</row>
+		<row class="VIE  asia n6  medium">
+			<c>Вьетнам</c>
+			<c>Ханой</c>
+			<c>Азия</c>
+			<c>96 208 984</c>
+			<c>329 560</c>
+		</row>
+		<row class="GAB  africa n2  small">
+			<c>Габон</c>
+			<c>Либревиль</c>
+			<c>Африка</c>
+			<c>2 172 579</c>
+			<c>267 667</c>
+		</row>
+		<row class="HAI  america n4  tiny">
+			<c>Гаити</c>
+			<c>Порт-о-Пренс</c>
+			<c>Америка</c>
+			<c>11 577 779</c>
+			<c>27 750</c>
+		</row>
+		<row class="GUY  america n1  small">
+			<c>Гайана</c>
+			<c>Джорджтаун</c>
+			<c>Америка</c>
+			<c>782 766</c>
+			<c>214 970</c>
+		</row>
+		<row class="GAM  africa n2  tiny">
+			<c>Гамбия</c>
+			<c>Банжул</c>
+			<c>Африка</c>
+			<c>2 347 706</c>
+			<c>11 300</c>
+		</row>
+		<row class="GHA  africa n5  small">
+			<c>Гана</c>
+			<c>Аккра</c>
+			<c>Африка</c>
+			<c>30 280 811</c>
+			<c>238 540</c>
+		</row>
+		<row class="GPE  america n1  dwarf">
+			<c>Гваделупа</c>
+			<c>Бас-Тер</c>
+			<c>Америка</c>
+			<c>403 750</c>
+			<c>1 780</c>
+		</row>
+		<row class="GUA  america n4  very-small">
+			<c>Гватемала</c>
+			<c>Гватемала</c>
+			<c>Америка</c>
+			<c>16 604 026</c>
+			<c>108 890</c>
+		</row>
+		<row class="GUI  africa n4  small">
+			<c>Гвинея</c>
+			<c>Конакри</c>
+			<c>Африка</c>
+			<c>12 218 357</c>
+			<c>245 857</c>
+		</row>
+		<row class="GNB  africa n2  very-small">
+			<c>Гвинея-Бисау</c>
+			<c>Бисау</c>
+			<c>Африка</c>
+			<c>1 604 528</c>
+			<c>36 120</c>
+		</row>
+		<row class="GER  europa n6  medium">
+			<c>Германия</c>
+			<c>Берлин</c>
+			<c>Европа</c>
+			<c>83 149 300</c>
+			<c>357 021</c>
+		</row>
+		<row class="GGY  europa  n0  dwarf">
+			<c>Гернси</c>
+			<c>Сент-Питер-Порт</c>
+			<c>Европа</c>
+			<c>63 196</c>
+			<c>78</c>
+		</row>
+		<row class="GIB  europa  n0  dwarf">
+			<c>Гибралтар</c>
+			<c>Гибралтар</c>
+			<c>Европа</c>
+			<c>33 691</c>
+			<c>7</c>
+		</row>
+		<row class="HON  america n3  very-small">
+			<c>Гондурас</c>
+			<c>Тегусигальпа</c>
+			<c>Америка</c>
+			<c>9 158 345</c>
+			<c>112 090</c>
+		</row>
+		<row class="HKG  asia n3  dwarf">
+			<c>Гонконг</c>
+			<c>&mdash;</c>
+			<c>Азия</c>
+			<c>7 500 700</c>
+			<c>1 016</c>
+		</row>
+		<row class="GRN  america n1  dwarf">
+			<c>Гренада</c>
+			<c>Сент-Джорджес</c>
+			<c>Америка</c>
+			<c>112 003</c>
+			<c>340</c>
+		</row>
+		<row class="GRL  america  n0  very-big">
+			<c>Гренландия</c>
+			<c>Нуук</c>
+			<c>Америка</c>
+			<c>56 081</c>
+			<c>2 166 086</c>
+		</row>
+		<row class="GRE  europa n4  small">
+			<c>Греция</c>
+			<c>Афины</c>
+			<c>Европа</c>
+			<c>10 724 599</c>
+			<c>131 940</c>
+		</row>
+		<row class="GEO  asia n2  very-small">
+			<c>Грузия</c>
+			<c>Тбилиси</c>
+			<c>Азия</c>
+			<c>3 716 858</c>
+			<c>57 200</c>
+		</row>
+		<row class="GUM  oceania n1  dwarf">
+			<c>Гуам (США)</c>
+			<c>Хагатна</c>
+			<c>Океания</c>
+			<c>172 400</c>
+			<c>548</c>
+		</row>
+		<row class="DEN  europa n3  very-small">
+			<c>Дания</c>
+			<c>Копенгаген</c>
+			<c>Европа</c>
+			<c>5 824 857</c>
+			<c>43 094</c>
+		</row>
+		<row class="COD  africa n6  very-big">
+			<c title="Демократическая Республика Конго">Демократическая Республика Конго</c>
+			<c>Киншаса</c>
+			<c>Африка</c>
+			<c>89 561 404</c>
+			<c>2 345 410</c>
+		</row>
+		<row class="JEY  europa n1  dwarf">
+			<c>Джерси</c>
+			<c>Сент-Хелиер</c>
+			<c>Европа</c>
+			<c>106 800</c>
+			<c>116</c>
+		</row>
+		<row class="DJI  africa n2  tiny">
+			<c>Джибути</c>
+			<c>Джибути</c>
+			<c>Африка</c>
+			<c>1 078 373</c>
+			<c>22 000</c>
+		</row>
+		<row class="DMA  america  n0  dwarf">
+			<c>Доминика</c>
+			<c>Розо</c>
+			<c>Америка</c>
+			<c>71 808</c>
+			<c>754</c>
+		</row>
+		<row class="DOM  america n4  very-small">
+			<c title="Доминиканская Республика">Доминиканская Республика</c>
+			<c>Санто-Доминго</c>
+			<c>Америка</c>
+			<c>10 358 320</c>
+			<c>48 730</c>
+		</row>
+		<row class="EGY  africa n7  big">
+			<c>Египет</c>
+			<c>Каир</c>
+			<c>Африка</c>
+			<c>100 456 444</c>
+			<c>1 001 450</c>
+		</row>
+		<row class="ZAM  africa n4  big">
+			<c>Замбия</c>
+			<c>Лусака</c>
+			<c>Африка</c>
+			<c>17 885 422</c>
+			<c>752 614</c>
+		</row>
+		<row class="SAH  africa n1  small">
+			<c>Западная Сахара</c>
+			<c>Эль-Аюн</c>
+			<c>Африка</c>
+			<c>582 463</c>
+			<c>266 000</c>
+		</row>
+		<row class="ZIM  africa n4  medium">
+			<c>Зимбабве</c>
+			<c>Хараре</c>
+			<c>Африка</c>
+			<c>15 159 624</c>
+			<c>390 580</c>
+		</row>
+		<row class="ISR  asia n3  tiny">
+			<c>Израиль</c>
+			<c>Иерусалим</c>
+			<c>Азия</c>
+			<c>9 204 865</c>
+			<c>22 072</c>
+		</row>
+		<row class="IND  asia n7  very-big">
+			<c>Индия</c>
+			<c>Нью-Дели</c>
+			<c>Азия</c>
+			<c>1 362 992 807</c>
+			<c>3 287 590</c>
+		</row>
+		<row class="IDN  asia n7  very-big">
+			<c>Индонезия</c>
+			<c>Джакарта</c>
+			<c>Азия</c>
+			<c>266 911 900</c>
+			<c>1 904 556</c>
+		</row>
+		<row class="JOR  asia n4  very-small">
+			<c>Иордания</c>
+			<c>Амман</c>
+			<c>Азия</c>
+			<c>10 693 560</c>
+			<c>92 300</c>
+		</row>
+		<row class="IRQ  asia n5  medium">
+			<c>Ирак</c>
+			<c>Багдад</c>
+			<c>Азия</c>
+			<c>40 150 200</c>
+			<c>437 072</c>
+		</row>
+		<row class="IRN  asia n6  very-big">
+			<c>Иран</c>
+			<c>Тегеран</c>
+			<c>Азия</c>
+			<c>83 497 484</c>
+			<c>1 648 000</c>
+		</row>
+		<row class="IRL  europa n2  very-small">
+			<c>Ирландия</c>
+			<c>Дублин</c>
+			<c>Европа</c>
+			<c>4 921 500</c>
+			<c>70 273</c>
+		</row>
+		<row class="ISL  europa n1  very-small">
+			<c>Исландия</c>
+			<c>Рейкьявик</c>
+			<c>Европа</c>
+			<c>366 130</c>
+			<c>103 000</c>
+		</row>
+		<row class="ESP  europa n5  medium">
+			<c>Испания</c>
+			<c>Мадрид</c>
+			<c>Европа</c>
+			<c>47 100 396</c>
+			<c>497 304</c>
+		</row>
+		<row class="ITA  europa n6  medium">
+			<c>Италия</c>
+			<c>Рим</c>
+			<c>Европа</c>
+			<c>60 238 522</c>
+			<c>301 340</c>
+		</row>
+		<row class="YEM  asia n5  medium">
+			<c>Йемен</c>
+			<c>Сана</c>
+			<c>Азия</c>
+			<c>29 825 968</c>
+			<c>527 970</c>
+		</row>
+		<row class="CPV  africa n1  tiny">
+			<c>Кабо-Верде</c>
+			<c>Прая</c>
+			<c>Африка</c>
+			<c>550 483</c>
+			<c>4 033</c>
+		</row>
+		<row class="KAZ  asia n4  very-big">
+			<c>Казахстан</c>
+			<c>Нур-Султан</c>
+			<c>Азия</c>
+			<c>18 712 048</c>
+			<c>2 724 902</c>
+		</row>
+		<row class="CAM  asia n4  small">
+			<c>Камбоджа</c>
+			<c>Пномпень</c>
+			<c>Азия</c>
+			<c>15 288 489</c>
+			<c>181 040</c>
+		</row>
+		<row class="CMR  africa n5  medium">
+			<c>Камерун</c>
+			<c>Яунде</c>
+			<c>Африка</c>
+			<c>26 545 864</c>
+			<c>475 440</c>
+		</row>
+		<row class="CAN  america n5  huge">
+			<c>Канада</c>
+			<c>Оттава</c>
+			<c>Америка</c>
+			<c>38 050 445</c>
+			<c>9 976 140</c>
+		</row>
+		<row class="QAT  asia n2  tiny">
+			<c>Катар</c>
+			<c>Доха</c>
+			<c>Азия</c>
+			<c>2 795 484</c>
+			<c>11 437</c>
+		</row>
+		<row class="KEN  africa n5  medium">
+			<c>Кения</c>
+			<c>Найроби</c>
+			<c>Африка</c>
+			<c>47 564 296</c>
+			<c>582 650</c>
+		</row>
+		<row class="CYP  europa n1  tiny">
+			<c>Кипр</c>
+			<c>Никосия</c>
+			<c>Европа</c>
+			<c>875 900</c>
+			<c>6 000</c>
+		</row>
+		<row class="KGZ  asia n3  small">
+			<c>Киргизия</c>
+			<c>Бишкек</c>
+			<c>Азия</c>
+			<c>6 533 500</c>
+			<c>198 500</c>
+		</row>
+		<row class="KIR  oceania n1  dwarf">
+			<c>Кирибати</c>
+			<c>Южная Тарава</c>
+			<c>Океания</c>
+			<c>120 100</c>
+			<c>717</c>
+		</row>
+		<row class="CHN  asia n7  huge">
+			<c>Китай</c>
+			<c>Пекин</c>
+			<c>Азия</c>
+			<c>1 402 915 880</c>
+			<c>9 598 077</c>
+		</row>
+		<row class="PRK  asia n5  very-small">
+			<c>КНДР</c>
+			<c>Пхеньян</c>
+			<c>Азия</c>
+			<c>25 450 000</c>
+			<c>120 540</c>
+		</row>
+		<row class="CC  asia  n0  dwarf">
+			<c>Кокосовые острова (Килинг)</c>
+			<c>Уэст-Айленд</c>
+			<c>Азия</c>
+			<c>555</c>
+			<c>14</c>
+		</row>
+		<row class="COL  america n5  big">
+			<c>Колумбия</c>
+			<c>Богота</c>
+			<c>Америка</c>
+			<c>49 395 678</c>
+			<c>1 138 910</c>
+		</row>
+		<row class="COM  africa n1  dwarf">
+			<c>Коморы</c>
+			<c>Морони</c>
+			<c>Африка</c>
+			<c>873 724</c>
+			<c>1 862</c>
+		</row>
+		<row class="CGO  africa n3  medium">
+			<c>Конго</c>
+			<c>Браззавиль</c>
+			<c>Африка</c>
+			<c>5 518 092</c>
+			<c>342 000</c>
+		</row>
+		<row class="CRC  america n3  very-small">
+			<c>Коста-Рика</c>
+			<c>Сан-Хосе</c>
+			<c>Америка</c>
+			<c>5 058 007</c>
+			<c>51 100</c>
+		</row>
+		<row class="CIV  africa n5  medium">
+			<c>Кот-д’Ивуар</c>
+			<c>Ямусукро</c>
+			<c>Африка</c>
+			<c>25 823 071</c>
+			<c>322 460</c>
+		</row>
+		<row class="CUB  america n4  very-small">
+			<c>Куба</c>
+			<c>Гавана</c>
+			<c>Америка</c>
+			<c>11 209 628</c>
+			<c>110 860</c>
+		</row>
+		<row class="KUW  asia n2  tiny">
+			<c>Кувейт</c>
+			<c>Эль-Кувейт</c>
+			<c>Азия</c>
+			<c>4 420 110</c>
+			<c>17 820</c>
+		</row>
+		<row class="CUW  america n1  dwarf">
+			<c>Кюрасао</c>
+			<c>Виллемстад</c>
+			<c>Америка</c>
+			<c>156 223</c>
+			<c>444</c>
+		</row>
+		<row class="LAO  asia n3  small">
+			<c>Лаос</c>
+			<c>Вьентьян</c>
+			<c>Азия</c>
+			<c>7 123 205</c>
+			<c>236 800</c>
+		</row>
+		<row class="LVA  europa n2  very-small">
+			<c>Латвия</c>
+			<c>Рига</c>
+			<c>Европа</c>
+			<c>1 904 600</c>
+			<c>64 589</c>
+		</row>
+		<row class="LES  africa n2  tiny">
+			<c>Лесото</c>
+			<c>Масеру</c>
+			<c>Африка</c>
+			<c>2 007 201</c>
+			<c>30 355</c>
+		</row>
+		<row class="LBR  africa n2  very-small">
+			<c>Либерия</c>
+			<c>Монровия</c>
+			<c>Африка</c>
+			<c>4 475 353</c>
+			<c>111 370</c>
+		</row>
+		<row class="LIB  asia n3  tiny">
+			<c>Ливан</c>
+			<c>Бейрут</c>
+			<c>Азия</c>
+			<c>6 825 442</c>
+			<c>10 452</c>
+		</row>
+		<row class="LBY  africa n3  very-big">
+			<c>Ливия</c>
+			<c>Триполи</c>
+			<c>Африка</c>
+			<c>6 871 287</c>
+			<c>1 759 540</c>
+		</row>
+		<row class="LTU  europa n2  very-small">
+			<c>Литва</c>
+			<c>Вильнюс</c>
+			<c>Европа</c>
+			<c>2 793 271</c>
+			<c>65 200</c>
+		</row>
+		<row class="LIE  europa  n0  dwarf">
+			<c>Лихтенштейн</c>
+			<c>Вадуц</c>
+			<c>Европа</c>
+			<c>38 749</c>
+			<c>160</c>
+		</row>
+		<row class="LUX  europa n1  dwarf">
+			<c>Люксембург</c>
+			<c>Люксембург</c>
+			<c>Европа</c>
+			<c>626 108</c>
+			<c>2 586</c>
+		</row>
+		<row class="MRI  africa n2  dwarf">
+			<c>Маврикий</c>
+			<c>Порт-Луи</c>
+			<c>Африка</c>
+			<c>1 265 475</c>
+			<c>2 040</c>
+		</row>
+		<row class="MTN  africa n2  big">
+			<c>Мавритания</c>
+			<c>Нуакшот</c>
+			<c>Африка</c>
+			<c>4 077 347</c>
+			<c>1 030 700</c>
+		</row>
+		<row class="MAD  africa n5  medium">
+			<c>Мадагаскар</c>
+			<c>Антананариву</c>
+			<c>Африка</c>
+			<c>26 251 309</c>
+			<c>587 040</c>
+		</row>
+		<row class="MYT  africa n1  dwarf">
+			<c>Майотта</c>
+			<c>Мамудзу</c>
+			<c>Африка</c>
+			<c>246 496</c>
+			<c>374</c>
+		</row>
+		<row class="MAC  asia n1  dwarf">
+			<c>Макао</c>
+			<c>&mdash;</c>
+			<c>Азия</c>
+			<c>696 100</c>
+			<c>31</c>
+		</row>
+		<row class="MWI  africa n4  very-small">
+			<c>Малави</c>
+			<c>Лилонгве</c>
+			<c>Африка</c>
+			<c>19 129 952</c>
+			<c>118 480</c>
+		</row>
+		<row class="MAS  asia n5  medium">
+			<c>Малайзия</c>
+			<c>Куала-Лумпур</c>
+			<c>Азия</c>
+			<c>32 798 760</c>
+			<c>329 750</c>
+		</row>
+		<row class="MLI  africa n4  big">
+			<c>Мали</c>
+			<c>Бамако</c>
+			<c>Африка</c>
+			<c>20 250 833</c>
+			<c>1 240 000</c>
+		</row>
+		<row class="MDV  asia n1  dwarf">
+			<c>Мальдивы</c>
+			<c>Мале</c>
+			<c>Азия</c>
+			<c>374 775</c>
+			<c>298</c>
+		</row>
+		<row class="MLT  europa n1  dwarf">
+			<c>Мальта</c>
+			<c>Валлетта</c>
+			<c>Европа</c>
+			<c>493 559</c>
+			<c>316</c>
+		</row>
+		<row class="MAR  africa n5  medium">
+			<c>Марокко</c>
+			<c>Рабат</c>
+			<c>Африка</c>
+			<c>35 915 525</c>
+			<c>446 550</c>
+		</row>
+		<row class="MTQ  america n1  dwarf">
+			<c>Мартиника</c>
+			<c>Фор-де-Франс</c>
+			<c>Америка</c>
+			<c>381 326</c>
+			<c>1 100</c>
+		</row>
+		<row class="MHL  oceania  n0  dwarf">
+			<c>Маршалловы Острова</c>
+			<c>Маджуро</c>
+			<c>Океания</c>
+			<c>55 500</c>
+			<c>181</c>
+		</row>
+		<row class="MEX  america n7  very-big">
+			<c>Мексика</c>
+			<c>Мехико</c>
+			<c>Америка</c>
+			<c>127 792 286</c>
+			<c>1 972 550</c>
+		</row>
+		<row class="MOZ  africa n5  big">
+			<c>Мозамбик</c>
+			<c>Мапуту</c>
+			<c>Африка</c>
+			<c>30 066 648</c>
+			<c>801 590</c>
+		</row>
+		<row class="MDA  europa n2  tiny">
+			<c>Молдавия</c>
+			<c>Кишинёв</c>
+			<c>Европа</c>
+			<c>2 681 735</c>
+			<c>29 680</c>
+		</row>
+		<row class="MCO  europa  n0  dwarf">
+			<c>Монако</c>
+			<c>Монако</c>
+			<c>Европа</c>
+			<c>38 100</c>
+			<c>2</c>
+		</row>
+		<row class="MGL  asia n2  very-big">
+			<c>Монголия</c>
+			<c>Улан-Батор</c>
+			<c>Азия</c>
+			<c>3 320 588</c>
+			<c>1 564 116</c>
+		</row>
+		<row class="MSR  america  n0  dwarf">
+			<c>Монтсеррат</c>
+			<c title="Плимут (де-юре), Брейдс (де-факто)">Плимут / Брейдс</c>
+			<c>Америка</c>
+			<c>4 989</c>
+			<c>102</c>
+		</row>
+		<row class="MYA  asia n6  medium">
+			<c>Мьянма</c>
+			<c>Нейпьидо</c>
+			<c>Азия</c>
+			<c>54 817 919</c>
+			<c>678 500</c>
+		</row>
+		<row class="NAM  africa n2  big">
+			<c>Намибия</c>
+			<c>Виндхук</c>
+			<c>Африка</c>
+			<c>2 746 746</c>
+			<c>825 418</c>
+		</row>
+		<row class="NRU  oceania  n0  dwarf">
+			<c>Науру</c>
+			<c>Ярен</c>
+			<c>Океания</c>
+			<c>11 000</c>
+			<c>21</c>
+		</row>
+		<row class="NEP  asia n5  small">
+			<c>Непал</c>
+			<c>Катманду</c>
+			<c>Азия</c>
+			<c>29 996 478</c>
+			<c>140 800</c>
+		</row>
+		<row class="NIG  africa n4  big">
+			<c>Нигер</c>
+			<c>Ниамей</c>
+			<c>Африка</c>
+			<c>22 314 743</c>
+			<c>1 267 000</c>
+		</row>
+		<row class="NGA  africa n7  big">
+			<c>Нигерия</c>
+			<c>Абуджа</c>
+			<c>Африка</c>
+			<c>206 139 587</c>
+			<c>923 768</c>
+		</row>
+		<row class="NED  europa n4  very-small">
+			<c>Нидерланды</c>
+			<c>Амстердам</c>
+			<c>Европа</c>
+			<c>17 472 381</c>
+			<c>41 526</c>
+		</row>
+		<row class="NCA  america n3  small">
+			<c>Никарагуа</c>
+			<c>Манагуа</c>
+			<c>Америка</c>
+			<c>6 460 411</c>
+			<c>129 494</c>
+		</row>
+		<row class="NIU  oceania  n0  dwarf">
+			<c>Ниуэ</c>
+			<c>Алофи</c>
+			<c>Океания</c>
+			<c>1 520</c>
+			<c>260</c>
+		</row>
+		<row class="NZL  oceania n3  small">
+			<c>Новая Зеландия</c>
+			<c>Веллингтон</c>
+			<c>Океания</c>
+			<c>5 006 437</c>
+			<c>268 680</c>
+		</row>
+		<row class="NCL  oceania n1  tiny">
+			<c>Новая Каледония</c>
+			<c>Нумеа</c>
+			<c>Океания</c>
+			<c>271 407</c>
+			<c>19 060</c>
+		</row>
+		<row class="NOR  europa n3  medium">
+			<c>Норвегия</c>
+			<c>Осло</c>
+			<c>Европа</c>
+			<c>5 372 355</c>
+			<c>324 220</c>
+		</row>
+		<row class="UAE  asia n3  very-small">
+			<c title="Объединённые Арабские Эмираты">Объединённые Арабские Эмираты</c>
+			<c>Абу-Даби</c>
+			<c>Азия</c>
+			<c>9 890 400</c>
+			<c>82 880</c>
+		</row>
+		<row class="OMA  asia n2  medium">
+			<c>Оман</c>
+			<c>Маскат</c>
+			<c>Азия</c>
+			<c>4 645 249</c>
+			<c>309 500</c>
+		</row>
+		<row class="IMN  europa  n0  dwarf">
+			<c>Остров Мэн</c>
+			<c>Дуглас</c>
+			<c>Европа</c>
+			<c>83 314</c>
+			<c>572</c>
+		</row>
+		<row class="NF  oceania  n0  dwarf">
+			<c>Остров Норфолк</c>
+			<c>Кингстон</c>
+			<c>Океания</c>
+			<c>1 735</c>
+			<c>35</c>
+		</row>
+		<row class="CX  asia  n0  dwarf">
+			<c>Остров Рождества</c>
+			<c>Флайинг-Фиш-Коув</c>
+			<c>Азия</c>
+			<c>1 955</c>
+			<c>135</c>
+		</row>
+		<row class="SHN  africa  n0  dwarf">
+			<c>Остров Святой Елены</c>
+			<c>Джеймстаун</c>
+			<c>Африка</c>
+			<c>5 633</c>
+			<c>410</c>
+		</row>
+		<row class="CAY  america  n0  dwarf">
+			<c>Острова Кайман</c>
+			<c>Джорджтаун</c>
+			<c>Америка</c>
+			<c>65 813</c>
+			<c>262</c>
+		</row>
+		<row class="COK  oceania  n0  dwarf">
+			<c>Острова Кука</c>
+			<c>Аваруа</c>
+			<c>Океания</c>
+			<c>15 200</c>
+			<c>240</c>
+		</row>
+		<row class="PCN  oceania  n0  dwarf">
+			<c>Острова Питкэрн</c>
+			<c>Адамстаун</c>
+			<c>Океания</c>
+			<c>50</c>
+			<c>47</c>
+		</row>
+		<row class="PAK  asia n7  big">
+			<c>Пакистан</c>
+			<c>Исламабад</c>
+			<c>Азия</c>
+			<c>220 892 331</c>
+			<c>803 940</c>
+		</row>
+		<row class="PLW  oceania  n0  dwarf">
+			<c>Палау</c>
+			<c>Нгерулмуд</c>
+			<c>Океания</c>
+			<c>17 900</c>
+			<c>458</c>
+		</row>
+		<row class="PLE  asia n2  tiny">
+			<c>Палестина</c>
+			<c>Рамалла</c>
+			<c>Азия</c>
+			<c>4 976 684</c>
+			<c>6 020</c>
+		</row>
+		<row class="PAN  america n2  very-small">
+			<c>Панама</c>
+			<c>Панама</c>
+			<c>Америка</c>
+			<c>4 218 808</c>
+			<c>78 200</c>
+		</row>
+		<row class="PNG  oceania n3  medium">
+			<c>Папуа — Новая Гвинея</c>
+			<c>Порт-Морсби</c>
+			<c>Океания</c>
+			<c>8 935 000</c>
+			<c>462 840</c>
+		</row>
+		<row class="PAR  america n3  medium">
+			<c>Парагвай</c>
+			<c>Асунсьон</c>
+			<c>Америка</c>
+			<c>7 252 672</c>
+			<c>406 750</c>
+		</row>
+		<row class="PER  america n5  big">
+			<c>Перу</c>
+			<c>Лима</c>
+			<c>Америка</c>
+			<c>32 824 358</c>
+			<c>1 285 220</c>
+		</row>
+		<row class="POL  europa n5  medium">
+			<c>Польша</c>
+			<c>Варшава</c>
+			<c>Европа</c>
+			<c>38 379 000</c>
+			<c>312 685</c>
+		</row>
+		<row class="POR  europa n4  very-small">
+			<c>Португалия</c>
+			<c>Лиссабон</c>
+			<c>Европа</c>
+			<c>10 276 617</c>
+			<c>92 082</c>
+		</row>
+		<row class="RMN  europa n1  tiny">
+			<c title="Приднестровская Молдавская Республика">Приднестровская Молдавская Республика</c>
+			<c>Тирасполь</c>
+			<c>Европа</c>
+			<c>469 000</c>
+			<c>4 163</c>
+		</row>
+		<row class="PUR  america n2  tiny">
+			<c>Пуэрто-Рико</c>
+			<c>Сан-Хуан</c>
+			<c>Америка</c>
+			<c>3 193 694</c>
+			<c>9 104</c>
+		</row>
+		<row class="ABH  asia n1  tiny">
+			<c>Республика Абхазия</c>
+			<c>Сухуми</c>
+			<c>Азия</c>
+			<c>244 832</c>
+			<c>8 600</c>
+		</row>
+		<row class="Artsakh  asia n1  tiny">
+			<c>Республика Арцах</c>
+			<c>Степанакерт</c>
+			<c>Азия</c>
+			<c>148 000</c>
+			<c>11 458</c>
+		</row>
+		<row class="KOR  asia n6  very-small">
+			<c>Республика Корея</c>
+			<c>Сеул</c>
+			<c>Азия</c>
+			<c>51 780 579</c>
+			<c>98 480</c>
+		</row>
+		<row class="KVX  europa n2  tiny">
+			<c>Республика Косово</c>
+			<c>Приштина</c>
+			<c>Европа</c>
+			<c>1 795 666</c>
+			<c>10 888</c>
+		</row>
+		<row class="REU  africa n1  dwarf">
+			<c>Реюньон</c>
+			<c>Сен-Дени</c>
+			<c>Африка</c>
+			<c>844 994</c>
+			<c>2 517</c>
+		</row>
+		<row class="RUS  europa  asia n7  huge">
+			<c>Россия</c>
+			<c>Москва</c>
+			<c>Европа / Азия</c>
+			<c>146 745 098</c>
+			<c>17 125 191</c>
+		</row>
+		<row class="RWA  africa n4  tiny">
+			<c>Руанда</c>
+			<c>Кигали</c>
+			<c>Африка</c>
+			<c>12 374 397</c>
+			<c>26 338</c>
+		</row>
+		<row class="ROU  europa n4  small">
+			<c>Румыния</c>
+			<c>Бухарест</c>
+			<c>Европа</c>
+			<c>19 405 156</c>
+			<c>237 500</c>
+		</row>
+		<row class="SLV  america n3  tiny">
+			<c>Сальвадор</c>
+			<c>Сан-Сальвадор</c>
+			<c>Америка</c>
+			<c>6 486 201</c>
+			<c>21 040</c>
+		</row>
+		<row class="SAM  oceania n1  tiny">
+			<c>Самоа</c>
+			<c>Апиа</c>
+			<c>Океания</c>
+			<c>200 874</c>
+			<c>2 860</c>
+		</row>
+		<row class="SMR  europa  n0  dwarf">
+			<c>Сан-Марино</c>
+			<c>Сан-Марино</c>
+			<c>Европа</c>
+			<c>33 553</c>
+			<c>61</c>
+		</row>
+		<row class="STP  africa n1  dwarf">
+			<c>Сан-Томе и Принсипи</c>
+			<c>Сан-Томе</c>
+			<c>Африка</c>
+			<c>210 240</c>
+			<c>1 001</c>
+		</row>
+		<row class="KSA  asia n5  very-big">
+			<c>Саудовская Аравия</c>
+			<c>Эр-Рияд</c>
+			<c>Азия</c>
+			<c>34 218 169</c>
+			<c>2 149 610</c>
+		</row>
+		<row class="MKD  europa n2  tiny">
+			<c>Северная Македония</c>
+			<c>Скопье</c>
+			<c>Европа</c>
+			<c>2 077 132</c>
+			<c>25 333</c>
+		</row>
+		<row class="NMI  oceania  n0  dwarf">
+			<c title="Северные Марианские Острова">Северные Марианские Острова</c>
+			<c>Сайпан</c>
+			<c>Океания</c>
+			<c>56 200</c>
+			<c>477</c>
+		</row>
+		<row class="SEY  africa  n0  dwarf">
+			<c>Сейшельские Острова</c>
+			<c>Виктория</c>
+			<c>Африка</c>
+			<c>98 055</c>
+			<c>455</c>
+		</row>
+		<row class="BLM  america  n0  dwarf">
+			<c>Сен-Бартелеми</c>
+			<c>Густавия</c>
+			<c>Америка</c>
+			<c>9 961</c>
+			<c>21</c>
+		</row>
+		<row class="SEN  africa n4  small">
+			<c>Сенегал</c>
+			<c>Дакар</c>
+			<c>Африка</c>
+			<c>16 705 608</c>
+			<c>196 190</c>
+		</row>
+		<row class="SMT  america  n0  dwarf">
+			<c>Сен-Мартен</c>
+			<c>Мариго</c>
+			<c>Америка</c>
+			<c>35 334</c>
+			<c>53</c>
+		</row>
+		<row class="SPM  america  n0  dwarf">
+			<c>Сен-Пьер и Микелон</c>
+			<c>Сен-Пьер</c>
+			<c>Америка</c>
+			<c>5 997</c>
+			<c>242</c>
+		</row>
+		<row class="VIN  america n1  dwarf">
+			<c title="Сент-Винсент и Гренадины">Сент-Винсент и Гренадины</c>
+			<c>Кингстаун</c>
+			<c>Америка</c>
+			<c>110 608</c>
+			<c>389</c>
+		</row>
+		<row class="SKN  america  n0  dwarf">
+			<c>Сент-Китс и Невис</c>
+			<c>Бастер</c>
+			<c>Америка</c>
+			<c>52 823</c>
+			<c>261</c>
+		</row>
+		<row class="LCA  america n1  dwarf">
+			<c>Сент-Люсия</c>
+			<c>Кастри</c>
+			<c>Америка</c>
+			<c>178 696</c>
+			<c>620</c>
+		</row>
+		<row class="SRB  europa n3  very-small">
+			<c>Сербия</c>
+			<c>Белград</c>
+			<c>Европа</c>
+			<c>6 963 764</c>
+			<c>77 473</c>
+		</row>
+		<row class="SIN  asia n3  dwarf">
+			<c>Сингапур</c>
+			<c>Сингапур</c>
+			<c>Азия</c>
+			<c>5 703 600</c>
+			<c>778</c>
+		</row>
+		<row class="SXM  america  n0  dwarf">
+			<c>Синт-Мартен</c>
+			<c>Филипсбург</c>
+			<c>Америка</c>
+			<c>40 614</c>
+			<c>35</c>
+		</row>
+		<row class="SYR  asia n4  small">
+			<c>Сирия</c>
+			<c>Дамаск</c>
+			<c>Азия</c>
+			<c>17 500 657</c>
+			<c>185 180</c>
+		</row>
+		<row class="SVK  europa n3  very-small">
+			<c>Словакия</c>
+			<c>Братислава</c>
+			<c>Европа</c>
+			<c>5 457 873</c>
+			<c>48 845</c>
+		</row>
+		<row class="SVN  europa n2  tiny">
+			<c>Словения</c>
+			<c>Любляна</c>
+			<c>Европа</c>
+			<c>2 095 861</c>
+			<c>20 253</c>
+		</row>
+		<row class="USA  america n7  huge">
+			<c title="Соединённые Штаты Америки">Соединённые Штаты Америки</c>
+			<c>Вашингтон</c>
+			<c>Америка</c>
+			<c>329 793 547</c>
+			<c>9 518 900</c>
+		</row>
+		<row class="SOL  oceania n1  tiny">
+			<c>Соломоновы Острова</c>
+			<c>Хониара</c>
+			<c>Океания</c>
+			<c>680 806</c>
+			<c>28 450</c>
+		</row>
+		<row class="SOM  africa n4  medium">
+			<c>Сомали</c>
+			<c>Могадишо</c>
+			<c>Африка</c>
+			<c>15 893 219</c>
+			<c>637 657</c>
+		</row>
+		<row class="SUD  africa n5  very-big">
+			<c>Судан</c>
+			<c>Хартум</c>
+			<c>Африка</c>
+			<c>42 553 875</c>
+			<c>1 886 065</c>
+		</row>
+		<row class="SUR  america n1  small">
+			<c>Суринам</c>
+			<c>Парамарибо</c>
+			<c>Америка</c>
+			<c>581 372</c>
+			<c>163 270</c>
+		</row>
+		<row class="SLE  africa n3  very-small">
+			<c>Сьерра-Леоне</c>
+			<c>Фритаун</c>
+			<c>Африка</c>
+			<c>7 901 454</c>
+			<c>71 740</c>
+		</row>
+		<row class="TJK  asia n3  small">
+			<c>Таджикистан</c>
+			<c>Душанбе</c>
+			<c>Азия</c>
+			<c>9 127 000</c>
+			<c>143 100</c>
+		</row>
+		<row class="THA  asia n6  medium">
+			<c>Таиланд</c>
+			<c>Бангкок</c>
+			<c>Азия</c>
+			<c>66 512 242</c>
+			<c>514 000</c>
+		</row>
+		<row class="TPE  asia n4  very-small">
+			<c title="Тайвань (Китайская Республика)">Тайвань (Китайская Республика)</c>
+			<c>Тайбэй</c>
+			<c>Азия</c>
+			<c>23 596 493</c>
+			<c>35 980</c>
+		</row>
+		<row class="TAN  africa n6  big">
+			<c>Танзания</c>
+			<c>Додома</c>
+			<c>Африка</c>
+			<c>57 637 628</c>
+			<c>948 087</c>
+		</row>
+		<row class="TCA  america  n0  dwarf">
+			<c>Теркс и Кайкос</c>
+			<c>Коберн-Таун</c>
+			<c>Америка</c>
+			<c>42 953</c>
+			<c>430</c>
+		</row>
+		<row class="TOG  africa n3  very-small">
+			<c>Того</c>
+			<c>Ломе</c>
+			<c>Африка</c>
+			<c>7 538 000</c>
+			<c>56 785</c>
+		</row>
+		<row class="TKL  oceania  n0  dwarf">
+			<c>Токелау</c>
+			<c>Атафу</c>
+			<c>Океания</c>
+			<c>1 400</c>
+			<c>12</c>
+		</row>
+		<row class="TGA  oceania n1  dwarf">
+			<c>Тонга</c>
+			<c>Нукуалофа</c>
+			<c>Океания</c>
+			<c>100 651</c>
+			<c>748</c>
+		</row>
+		<row class="TRI  america n2  tiny">
+			<c>Тринидад и Тобаго</c>
+			<c>Порт-оф-Спейн</c>
+			<c>Америка</c>
+			<c>1 363 985</c>
+			<c>5 128</c>
+		</row>
+		<row class="TUV  oceania  n0  dwarf">
+			<c>Тувалу</c>
+			<c>Фунафути</c>
+			<c>Океания</c>
+			<c>10 200</c>
+			<c>26</c>
+		</row>
+		<row class="TUN  africa n4  small">
+			<c>Тунис</c>
+			<c>Тунис</c>
+			<c>Африка</c>
+			<c>11 722 038</c>
+			<c>163 610</c>
+		</row>
+		<row class="NCP  asia n1  tiny">
+			<c title="Турецкая Республика Северного Кипра">Турецкая Республика Северного Кипра</c>
+			<c>Никосия</c>
+			<c>Азия</c>
+			<c>351 965</c>
+			<c>3 300</c>
+		</row>
+		<row class="TKM  asia n3  medium">
+			<c>Туркмения</c>
+			<c>Ашхабад</c>
+			<c>Азия</c>
+			<c>6 031 187</c>
+			<c>491 200</c>
+		</row>
+		<row class="TUR  asia n6  big">
+			<c>Турция</c>
+			<c>Анкара</c>
+			<c>Азия</c>
+			<c>83 154 997</c>
+			<c>780 580</c>
+		</row>
+		<row class="UGA  africa n5  small">
+			<c>Уганда</c>
+			<c>Кампала</c>
+			<c>Африка</c>
+			<c>41 590 300</c>
+			<c>236 040</c>
+		</row>
+		<row class="UZB  asia n5  medium">
+			<c>Узбекистан</c>
+			<c>Ташкент</c>
+			<c>Азия</c>
+			<c>34 217 144</c>
+			<c>447 400</c>
+		</row>
+		<row class="UKR  europa n5  medium">
+			<c>Украина</c>
+			<c>Киев</c>
+			<c>Европа</c>
+			<c>41 830 619</c>
+			<c>576 604</c>
+		</row>
+		<row class="WLF  oceania  n0  dwarf">
+			<c>Уоллис и Футуна</c>
+			<c>Мата-Уту</c>
+			<c>Океания</c>
+			<c>11 700</c>
+			<c>274</c>
+		</row>
+		<row class="URU  america n2  small">
+			<c>Уругвай</c>
+			<c>Монтевидео</c>
+			<c>Америка</c>
+			<c>3 518 552</c>
+			<c>176 220</c>
+		</row>
+		<row class="FRO  europa  n0  dwarf">
+			<c>Фареры</c>
+			<c>Торсхавн</c>
+			<c>Европа</c>
+			<c>52 428</c>
+			<c>1 399</c>
+		</row>
+		<row class="FSM  oceania n1  dwarf">
+			<c title="Федеративные Штаты Микронезии">Федеративные Штаты Микронезии</c>
+			<c>Паликир</c>
+			<c>Океания</c>
+			<c>104 468</c>
+			<c>702</c>
+		</row>
+		<row class="FIJ  oceania n1  tiny">
+			<c>Фиджи</c>
+			<c>Сува</c>
+			<c>Океания</c>
+			<c>884 887</c>
+			<c>18 270</c>
+		</row>
+		<row class="PHI  asia n7  medium">
+			<c>Филиппины</c>
+			<c>Манила</c>
+			<c>Азия</c>
+			<c>108 707 079</c>
+			<c>299 764</c>
+		</row>
+		<row class="FIN  europa n3  medium">
+			<c>Финляндия</c>
+			<c>Хельсинки</c>
+			<c>Европа</c>
+			<c>5 498 806</c>
+			<c>337 030</c>
+		</row>
+		<row class="FLK  america  n0  tiny">
+			<c title="Фолклендские (Мальвинские) острова">Фолклендские (Мальвинские) острова</c>
+			<c>Стэнли</c>
+			<c>Америка</c>
+			<c>3 198</c>
+			<c>12 173</c>
+		</row>
+		<row class="FRA  europa n6  medium">
+			<c>Франция</c>
+			<c>Париж</c>
+			<c>Европа</c>
+			<c>67 075 000</c>
+			<c>547 030</c>
+		</row>
+		<row class="GYF  america n1  very-small">
+			<c>Французская Гвиана</c>
+			<c>Кайенна</c>
+			<c>Америка</c>
+			<c>254 541</c>
+			<c>91 000</c>
+		</row>
+		<row class="TAH  oceania n1  tiny">
+			<c title="Французская Полинезия (Таити)">Французская Полинезия (Таити)</c>
+			<c>Папеэте</c>
+			<c>Океания</c>
+			<c>275 918</c>
+			<c>4 167</c>
+		</row>
+		<row class="CRO  europa n2  very-small">
+			<c>Хорватия</c>
+			<c>Загреб</c>
+			<c>Европа</c>
+			<c>4 076 246</c>
+			<c>56 542</c>
+		</row>
+		<row class="CTA  africa n3  medium">
+			<c title="Центральноафриканская Республика">Центральноафриканская Республика</c>
+			<c>Банги</c>
+			<c>Африка</c>
+			<c>5 496 011</c>
+			<c>622 984</c>
+		</row>
+		<row class="CHA  africa n4  big">
+			<c>Чад</c>
+			<c>Нджамена</c>
+			<c>Африка</c>
+			<c>16 244 513</c>
+			<c>1 284 000</c>
+		</row>
+		<row class="MNE  europa n1  tiny">
+			<c>Черногория</c>
+			<c>Подгорица</c>
+			<c>Европа</c>
+			<c>622 359</c>
+			<c>14 026</c>
+		</row>
+		<row class="CZE  europa n4  very-small">
+			<c>Чехия</c>
+			<c>Прага</c>
+			<c>Европа</c>
+			<c>10 693 939</c>
+			<c>78 866</c>
+		</row>
+		<row class="CHI  america n4  big">
+			<c>Чили</c>
+			<c>Сантьяго</c>
+			<c>Америка</c>
+			<c>19 107 216</c>
+			<c>756 950</c>
+		</row>
+		<row class="SUI  europa n3  very-small">
+			<c>Швейцария</c>
+			<c>Берн</c>
+			<c>Европа</c>
+			<c>8 603 899</c>
+			<c>41 290</c>
+		</row>
+		<row class="SWE  europa n4  medium">
+			<c>Швеция</c>
+			<c>Стокгольм</c>
+			<c>Европа</c>
+			<c>10 343 403</c>
+			<c>449 964</c>
+		</row>
+		<row class="SRI  asia n4  very-small">
+			<c>Шри-Ланка</c>
+			<c title="Шри-Джаяварденепура-Котте">Шри-Джаяварденепура-Котте</c>
+			<c>Азия</c>
+			<c>21 803 000</c>
+			<c>65 610</c>
+		</row>
+		<row class="ECU  america n4  small">
+			<c>Эквадор</c>
+			<c>Кито</c>
+			<c>Америка</c>
+			<c>17 497 960</c>
+			<c>283 560</c>
+		</row>
+		<row class="EQG  africa n2  tiny">
+			<c>Экваториальная Гвинея</c>
+			<c>Малабо</c>
+			<c>Африка</c>
+			<c>1 454 789</c>
+			<c>28 051</c>
+		</row>
+		<row class="ERI  africa n2  very-small">
+			<c>Эритрея</c>
+			<c>Асмэра</c>
+			<c>Африка</c>
+			<c>3 497 117</c>
+			<c>121 320</c>
+		</row>
+		<row class="SWZ  africa n2  tiny">
+			<c>Эсватини</c>
+			<c>Мбабане</c>
+			<c>Африка</c>
+			<c>1 093 238</c>
+			<c>17 363</c>
+		</row>
+		<row class="EST  europa n2  very-small">
+			<c>Эстония</c>
+			<c>Таллин</c>
+			<c>Европа</c>
+			<c>1 328 976</c>
+			<c>45 226</c>
+		</row>
+		<row class="ETH  africa n6  big">
+			<c>Эфиопия</c>
+			<c>Аддис-Абеба</c>
+			<c>Африка</c>
+			<c>98 665 000</c>
+			<c>1 127 127</c>
+		</row>
+		<row class="OSE  asia  n0  tiny">
+			<c>Южная Осетия</c>
+			<c>Цхинвал</c>
+			<c>Азия</c>
+			<c>53 532</c>
+			<c>3 900</c>
+		</row>
+		<row class="RSA  africa n6  big">
+			<c title="Южно-Африканская Республика">Южно-Африканская Республика</c>
+			<c>Претория</c>
+			<c>Африка</c>
+			<c>58 775 022</c>
+			<c>1 219 912</c>
+		</row>
+		<row class="SSD  africa n4  medium">
+			<c>Южный Судан</c>
+			<c>Джуба</c>
+			<c>Африка</c>
+			<c>12 778 250</c>
+			<c>619 745</c>
+		</row>
+		<row class="JAM  america n2  tiny">
+			<c>Ямайка</c>
+			<c>Кингстон</c>
+			<c>Америка</c>
+			<c>2 726 667</c>
+			<c>10 990</c>
+		</row>
+		<row class="JPN  asia n7  medium">
+			<c>Япония</c>
+			<c>Токио</c>
+			<c>Азия</c>
+			<c>125 900 000</c>
+			<c>377 835</c>
+		</row>
+	</table-data>
+</table-flex>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<script src="script.js"></script>
+</body>
+</html>
