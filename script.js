@@ -81,15 +81,15 @@ function filterState() {
 	else
 		table_filter__clean.classList.remove('hidden')
 }
-function filterClean() {
-		// console.log(c_all.checked,hs_all.checked,n_all.checked,t_all.checked);
-	filterContinent('clean');
-	filterHemisphere('clean');
-	// filterNaselenie('clean');
-	// filterTerra('clean');
-		// console.log(c_all.checked,hs_all.checked,n_all.checked,t_all.checked);
-	filterState();
-}
+// function filterClean() {
+// 		console.log(c_all.checked,hs_all.checked,n_all.checked,t_all.checked);
+// 	filterContinent('clean');
+// 	filterHemisphere('clean');
+// 	filterNaselenie('clean');
+// 	filterTerra('clean');
+// 		console.log(c_all.checked,hs_all.checked,n_all.checked,t_all.checked);
+// 	filterState();
+// }
 function filterContinent(a) {
 	if ((this && this.getAttribute('id') == 'c_all') || a == 'clean') {
 		cont[0].checked = 1;
@@ -486,8 +486,8 @@ d.querySelectorAll('th').forEach((element) =>
 table_search.oninput = tableSearch;
 nas_mln.onclick = shortValuesNasTerra;
 terra_kilo.onclick = shortValuesNasTerra;
-table_filter__clean.onclick = filterClean;
-d.querySelector('.table-filter__container').oninput = filterState;
+// table_filter__clean.onclick = filterClean;
+// d.querySelector('.table-filter__container').oninput = filterState;
 settings_visibility.onclick = function () {d.querySelector('.table-filter__settings').classList.toggle('shown');};
 
 createTable();
